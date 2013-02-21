@@ -17,11 +17,12 @@ Because the new Twitter API v 1.1 requires all calls to be authenticated you wil
 ##Screenshots
 
 
+
 ![Latest tweets widget - Frontend screen grab](https://dl.dropbox.com/u/35123605/GitHub/latesttweets-frontend.gif)
 
 
-![Latest tweets widget - SilverStripe admin](https://dl.dropbox.com/u/35123605/GitHub/latesttweets-admin.gif)
 
+![Latest tweets widget - SilverStripe admin](https://dl.dropbox.com/u/35123605/GitHub/latesttweets-admin.gif)
 
 ## Requirements
 
