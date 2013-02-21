@@ -1,0 +1,5 @@
+.latest-tweets{margin-bottom:0 !important;}.latest-tweets .tweet{margin-bottom:20px;}.latest-tweets .tweet:after{content:"";display:table;clear:both;}
+.latest-tweets .tweet:last-child{margin-bottom:0;}
+.latest-tweets .tweet-pic{float:left;}
+.latest-tweets .tweet-text{margin-left:68px;}
+.latest-tweets .tweet-date{margin-bottom:0;margin-left:68px;}

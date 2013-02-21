@@ -1,0 +1,23 @@
+/**
+ * Latest Tweets Widget
+ */
+
+.latest-tweets {
+    margin-bottom: 0 !important;
+    .tweet {
+        margin-bottom: 20px;
+        &:after {
+            // Clearfix
+            content: "";
+            display: table;
+            clear: both;
+        }
+        &:last-child { margin-bottom: 0; }
+    }
+    .tweet-pic { float: left; }
+    .tweet-text { margin-left: 68px; }
+    .tweet-date {
+        margin-bottom: 0;
+        margin-left: 68px;
+    }
+}
