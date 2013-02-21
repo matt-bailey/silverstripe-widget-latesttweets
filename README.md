@@ -8,7 +8,7 @@ To use the widget you will also need to create a Twitter App: https://dev.twitte
 
 ##Installation & Usage
 
-Simply rename the folder to `widget_latestTweets`, drop it into the root directory of your SilverStripe site and run a `/dev/build`. You will then see the widget in your list of available widgets.
+Simply rename the folder to `widget_latestTweets` (that bit is important), drop it into the root directory of your SilverStripe site and run a `/dev/build`. You will then see the widget in your list of available widgets.
 
 You will of course need the [SilverStripe Widgets module](https://github.com/silverstripe/silverstripe-widgets) installed and a widget area in your template.
 
@@ -28,3 +28,6 @@ Because the new Twitter API v 1.1 requires all calls to be authenticated you wil
 
 * SilverStripe v3.*
 * The [SilverStripe Widgets module](https://github.com/silverstripe/silverstripe-widgets).
+
+##License
+Feel free to use this as you like.
