@@ -12,13 +12,16 @@ Simply drop the folder into the root directory of your SilverStripe site and run
 
 You will of course need the [SilverStripe Widgets module](https://github.com/silverstripe/silverstripe-widgets) installed and a widget area in your template.
 
-Because the new Twitter API v 1.1 requires all calls to be authenticated you will also need to [create a Twitter app](https://dev.twitter.com/apps) in order to create the neccessary tokens.
+Because the new Twitter API v 1.1 requires all calls to be authenticated you will also need to [create a Twitter app](https://dev.twitter.com/apps) in order to create the neccessary access tokens.
 
 ##Screenshots
 
+
 ![Latest tweets widget - Frontend screen grab](https://dl.dropbox.com/u/35123605/GitHub/latesttweets-frontend.gif)
 
+
 ![Latest tweets widget - SilverStripe admin](https://dl.dropbox.com/u/35123605/GitHub/latesttweets-admin.gif)
+
 
 ## Requirements
 
