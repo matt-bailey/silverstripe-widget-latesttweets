@@ -1,7 +1,7 @@
 {
-    "name": "silverstripe/latesttweets",
+    "name": "matt-bailey/silverstripe-widget-latesttweets",
     "description": "A SilverStripe widget for showing the latest tweets from a named Twitter account.",
-    "type": "silverstripe-widget",
+    "type": "silverstripe-module",
     "keywords": ["silverstripe", "widget", "twitter", "tweets", "oauth"],
     "authors": [
     {
