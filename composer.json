@@ -1,0 +1,16 @@
+{
+    "name": "silverstripe/latesttweets",
+    "description": "A SilverStripe widget for showing the latest tweets from a named Twitter account.",
+    "type": "silverstripe-widget",
+    "keywords": ["silverstripe", "widget", "twitter", "tweets", "oauth"],
+    "authors": [
+    {
+        "name": "Matt Bailey",
+        "email": "me@mattbailey.co"
+    }
+    ],
+    "require":
+    {
+        "silverstripe/framework": "3.*"
+    }
+}
