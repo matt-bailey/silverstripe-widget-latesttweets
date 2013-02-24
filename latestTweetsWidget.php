@@ -120,12 +120,14 @@ class LatestTweetsWidget extends Widget {
 
         $response = $tmhOAuth->response['response'];
         $tweets = json_decode($response, true);
+        $output = new ArrayList();
         foreach ($tweets as &$tweet) {
             $tweet['text'] = $this->tweetConvert($tweet['text']);
             //$tweet['created_at'] = date("jS F Y", strtotime($tweet['created_at']));
             $tweet['created_at'] = $this->relativeDate(strtotime($tweet['created_at']), false);
+            $output->push(new ArrayData($tweet));
         }
-        return new DataObjectSet($tweets);
+        return $output;
 
     }
 
