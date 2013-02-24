@@ -29,7 +29,7 @@ class LatestTweetsWidget extends Widget {
     );
 
     function getCMSFields(){
-        return new FieldSet(
+        return new FieldList(
             new TextField("WidgetTitle", "Widget Title"),
             new TextField("ConsumerKey", "Consumer Key"),
             new TextField("ConsumerSecret", "Consumer Secret"),
