@@ -99,11 +99,11 @@ class LatestTweetsWidget extends Widget {
     function getLatestTweets() {
 
         // Load tmhOAuth
-        require(Director::baseFolder() . '/widget_latestTweets/libs/tmhOAuth.php');
-        require(Director::baseFolder() . '/widget_latestTweets/libs/tmhUtilities.php');
+        require(Director::baseFolder() . '/widget_latesttweets/libs/tmhOAuth.php');
+        require(Director::baseFolder() . '/widget_latesttweets/libs/tmhUtilities.php');
 
         // Load widget css
-        Requirements::css("widget_latestTweets/css/latestTweetsWidget.css");
+        Requirements::css("widget_latesttweets/css/latestTweetsWidget.css");
 
         $tmhOAuth = new tmhOAuth(array(
             'consumer_key' => $this->ConsumerKey,
