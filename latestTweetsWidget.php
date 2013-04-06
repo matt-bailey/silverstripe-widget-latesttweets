@@ -120,15 +120,32 @@ class LatestTweetsWidget extends Widget {
 
         $response = $tmhOAuth->response['response'];
         $tweets = json_decode($response, true);
-        $output = new ArrayList();
+        
+        if($this->_errorCheck($tweets)){
+            return false;
+        }
+
+        $output = new ArrayList();    
         foreach ($tweets as &$tweet) {
             $tweet['text'] = $this->tweetConvert($tweet['text']);
             //$tweet['created_at'] = date("jS F Y", strtotime($tweet['created_at']));
             $tweet['created_at'] = $this->relativeDate(strtotime($tweet['created_at']), false);
             $output->push(new ArrayData($tweet));
         }
+        
         return $output;
-
     }
 
+    private function _errorCheck($tweets){
+        if(array_key_exists('errors', $tweets)){
+            $message = 'We have encountered '.count($tweets['errors']).' error(s): <br />';
+            foreach ($tweets['errors'] as $error) {
+                $message .= $error['message'].' Code:'.$error['code'].'<br />';
+            }
+            if(Director::isDev()){
+                throw new Exception($message, 1);
+            }
+            return true;
+        }
+    }
 }
