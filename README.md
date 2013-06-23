@@ -1,3 +1,5 @@
+**Note: This widget works with the new Twitter API v1.1**
+
 #Latest Tweets SilverStripe widget
 
 **This [SilverStripe](http://www.silverstripe.org/) widget shows the latest tweets from a named Twitter account.**
